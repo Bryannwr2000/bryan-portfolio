@@ -3,6 +3,7 @@ import { AppWrap } from "../../wrapper";
 import { motion } from "framer-motion";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { client, urlFor } from "../../client";
+import Loader from "../../components/Loader/Loader";
 
 import "./Profile.scss";
 
@@ -48,7 +49,7 @@ const Profile = () => {
     });
   }, []);
 
-  if (!profile) return "Loading...";
+  if (!profile) return <Loader />;
 
   return (
     <div id="home" className="app__profile app__flex">
