@@ -1,0 +1,218 @@
+#home {
+  position: relative;
+  // background-color: #edf2f8;
+  // background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+  // background-repeat: repeat;
+  background-color: #edf2f8;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+
+  .app__wrapper {
+    padding: 0;
+
+    .copyright {
+      display: none;
+    }
+  }
+}
+
+.app__profile--text {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--black-color);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.8rem;
+  }
+}
+
+.app__profile--head-text {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--black-color);
+  text-transform: capitalize;
+
+  span {
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+}
+
+.app__profile--bold-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--black-color);
+  text-align: center;
+
+  span {
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2.5rem;
+  }
+}
+
+.app__profile {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+
+  padding: 6rem 2rem 0;
+
+  @media screen and (min-width: 2000px) {
+    padding-top: 8rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding-top: 6rem 1rem 2rem;
+  }
+}
+
+.app__profile--container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.app__profile-name {
+  display: flex;
+}
+
+.app__profile-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: none;
+    font-family: var(--font-base);
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  .app__profile-btn1 {
+    color: black;
+    background-color: #fff;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--secondary-color);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .app__profile-btn2 {
+    color: #fff;
+    background-color: var(--secondary-color);
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        box-shadow: 0 0 15px var(--secondary-color);
+      }
+    }
+  }
+}
+
+.app__profile-img-container {
+  width: 300px;
+  height: 300px;
+}
+
+.app__profile-img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  animation: morph 8s ease-in-out infinite;
+  background-color: #ffffff;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  transition: all 1s ease-in-out;
+
+  img {
+    width: 70%;
+    object-fit: contain;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  .overlay_circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 90%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin: 2rem 0;
+  }
+}
+
+.app__profile-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+
+  div {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    svg {
+      width: 25px;
+      height: 25px;
+      color: black;
+    }
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
