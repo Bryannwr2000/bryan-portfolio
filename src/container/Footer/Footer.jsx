@@ -90,7 +90,11 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>
+          <button
+            type="button"
+            className="p-text app__flex"
+            onClick={handleSubmit}
+          >
             {loading ? "Sending" : "Send Message"}
           </button>
         </div>
