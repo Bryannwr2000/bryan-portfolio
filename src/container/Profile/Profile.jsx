@@ -89,11 +89,7 @@ const Profile = () => {
           </h1>
         </div>
         <div className="app__profile-btn-container">
-          <a
-            href="https://drive.google.com/file/d/1bOKCaL-yZmagimwG4hqZVaHkkC3j0lTv/view"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={profile.resume} target="_blank" rel="noreferrer">
             <button className="app__profile-btn1">View Resume</button>
           </a>
           <a href="#contact">

@@ -21,5 +21,10 @@ export default {
       title: 'Color',
       type: 'string',
     },
+    {
+      name: 'resume',
+      title: 'Resume',
+      type: 'url',
+    },
   ],
 }
