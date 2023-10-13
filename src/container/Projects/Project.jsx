@@ -18,7 +18,7 @@ const Project = () => {
   useEffect(() => {
     const query = `*[_type=='project' && projectId == '${projectId}']`;
     client.fetch(query).then((data) => setProject(data));
-  }, []);
+  }, [projectId]);
 
   if (!project) return <Loader />;
 

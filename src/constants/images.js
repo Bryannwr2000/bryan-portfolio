@@ -13,7 +13,7 @@ import circle from "../assets/circle.svg";
 import Blogo from "../assets/Blogo.png";
 import Bear from "../assets/bear.png";
 
-export default {
+const images = {
   api,
   css,
   git,
@@ -29,3 +29,5 @@ export default {
   Blogo,
   Bear,
 };
+
+export default images;
