@@ -40,6 +40,9 @@ const Work = () => {
       <h2 className="head-text">
         From <span>Vision</span> to <span>Reality</span>: My Projects
       </h2>
+      <h4 className="h4-text">
+        Dive into the details by clicking on the individual project cards 🔎
+      </h4>
 
       <div className="app__work-filter">
         {["AI/ML", "Web App", "Mechatronics", "All"].map((item, index) => (
